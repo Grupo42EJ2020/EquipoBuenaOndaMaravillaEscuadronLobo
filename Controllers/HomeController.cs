@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace MVCLaboratorio.Controllers
 {
     public class HomeController : Controller
@@ -15,6 +16,7 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        
 
     }
 }

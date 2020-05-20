@@ -10,5 +10,12 @@
     <h1>
     PIA 👍
     </h1>
+    <h1>Menú Principal</h1>
+    <center>
+     <a href="/Video/Index">Ir a la lista de Video</a>
+    </center>
+   
+    <p>
+    </p>
 </body>
 </html>
