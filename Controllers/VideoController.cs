@@ -32,7 +32,7 @@ namespace MVCLaboratorio.Controllers
         public ActionResult VideoDelete(int id, FormCollection datos)
         {
             repoVideo.eliminarVideo(id);
-            return RedirectToAction("/Video");
+            return RedirectToAction("Index");
 
         }
 
@@ -52,7 +52,7 @@ namespace MVCLaboratorio.Controllers
         {
             datosVideo.IdVideo = id;
             repoVideo.actualizarVideo(datosVideo);
-            return RedirectToAction("/Video/Index");
+            return RedirectToAction("Index");
         }
 
         public ActionResult VideoCreate()
@@ -65,7 +65,10 @@ namespace MVCLaboratorio.Controllers
         {
             repoVideo.insertarVideo(datos);
             return RedirectToAction("Index");
+<<<<<<< HEAD
 
+=======
+>>>>>>> b3ff6b356b26764d107be6abcbc13cef026c1325
         }
     }
 }
