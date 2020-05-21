@@ -20,40 +20,40 @@ namespace MVCLaboratorio.Controllers
         //Lista de Empleado
         public ActionResult Index()
         {
-            return View(repoEmple.obtenerEmpleado());
+            return View(repoEmpleado.obtenerEmpleado());
         }
 
         //Elimina un Empleado
         public ActionResult EmpleadoDelete(int id)
         {
-            return View(repoEmple.obtenerVideo(id));
+            return View(repoEmpleado.obtenerEmpleado(id));
         }
 
         [HttpPost]
         public ActionResult EmpleadoDelete(int id, FormCollection datos)
         {
-            repoEmple.eliminarVideo(id);
-            return RedirectToAction("/Empleado");
+            repoEmpleado.eliminarEmpleado(id);
+            return RedirectToAction("Index");
 
         }
 
         //Editar EMPLEADO
         public ActionResult EmpleadoDetails(int id)
         {
-            return View(repoEmple.obtenerVideo(id));
+            return View(repoEmpleado.obtenerEmpleado(id));
         }
 
         public ActionResult EmpleadoEdit(int id)
         {
-            return View(repoEmple.obtenerEmpleado(id));
+            return View(repoEmpleado.obtenerEmpleado(id));
         }
 
         [HttpPost]
-        public ActionResult VideoEdit(int id, Empleado datosEmpleado)
+        public ActionResult EmpleadoEdit(int id, Empleado datosEmpleado)
         {
-            datosEmpleado.IdVideo = id;
-            repoEmple.actualizarVideo(datosEmple);
-            return RedirectToAction("/Empleado/Index");
+            datosEmpleado.IdEmpleado = id;
+            repoEmpleado.actualizarEmpleado(datosEmpleado);
+            return RedirectToAction("Index");
         }
 
         public ActionResult EmpleadoCreate()
@@ -64,7 +64,7 @@ namespace MVCLaboratorio.Controllers
         [HttpPost]
         public ActionResult EmpleadoCreate(Empleado datos)
         {
-            repoEmple.insertarEmpleado(datos);
+            repoEmpleado.insertarEmpleado(datos);
             return RedirectToAction("Index");
         }
 

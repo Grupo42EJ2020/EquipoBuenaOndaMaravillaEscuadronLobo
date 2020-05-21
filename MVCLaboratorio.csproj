@@ -73,39 +73,34 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-
     <Compile Include="Models\ITema.cs" />
-    <Compile Include="Models\IVideo.cs" />
     <Compile Include="Models\RepositorioTema.cs" />
-
     <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\IEmpleado.cs" />
     <Compile Include="Models\IVideo.cs" />
     <Compile Include="Models\RepositorioEmpleado.cs" />
-
     <Compile Include="Models\RepositorioVideo.cs" />
     <Compile Include="Models\Tema.cs" />
-    <Compile Include="Models\Video.cs" />
+    <Compile Include="Models\Video.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilerias\BaseHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Views\Empleado\EmpleadoCreate.aspx" />
+    <Content Include="Views\Empleado\EmpleadoDelete.aspx" />
+    <Content Include="Views\Empleado\EmpleadoDetails.aspx" />
+    <Content Include="Views\Empleado\EmpleadoEdit.aspx" />
+    <Content Include="Views\Empleado\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
-
     <Content Include="Views\Tema\Index.aspx" />
     <Content Include="Views\Tema\TemaCreate.aspx" />
     <Content Include="Views\Tema\TemaDelete.aspx" />
     <Content Include="Views\Tema\TemaDetails.aspx" />
     <Content Include="Views\Tema\TemaEdit.aspx" />
-
-    <Content Include="Views\Video\Empleado\EmpleadoCreate.aspx" />
-    <Content Include="Views\Video\Empleado\EmpleadoDelete.aspx" />
-    <Content Include="Views\Video\Empleado\EmpleadoDetails.aspx" />
-    <Content Include="Views\Video\Empleado\EmpleadoEdit.aspx" />
-    <Content Include="Views\Video\Empleado\IndexEmpl.aspx" />
-
     <Content Include="Views\Video\Index.aspx" />
     <Content Include="Views\Video\VideoCreate.aspx" />
     <Content Include="Views\Video\VideoDelete.aspx" />

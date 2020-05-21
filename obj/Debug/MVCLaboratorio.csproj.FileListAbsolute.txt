@@ -1,0 +1,5 @@
+C:\Users\manym\Desktop\Pia Desarrollo\EquipoBuenaOndaMaravillaEscuadronLobo\bin\Models\Video.cs
+C:\Users\manym\Desktop\Pia Desarrollo\EquipoBuenaOndaMaravillaEscuadronLobo\bin\MVCLaboratorio.dll
+C:\Users\manym\Desktop\Pia Desarrollo\EquipoBuenaOndaMaravillaEscuadronLobo\bin\MVCLaboratorio.pdb
+C:\Users\manym\Desktop\Pia Desarrollo\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.dll
+C:\Users\manym\Desktop\Pia Desarrollo\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.pdb

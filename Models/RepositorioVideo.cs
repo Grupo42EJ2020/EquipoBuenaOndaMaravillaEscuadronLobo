@@ -88,5 +88,11 @@ namespace MVCLaboratorio.Models
             BaseHelper.ejecutarConsulta("sp_Actualizar_Video", CommandType.StoredProcedure, parametros);
 
         }
+
+
+        public List<Video> obtenerVideo()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

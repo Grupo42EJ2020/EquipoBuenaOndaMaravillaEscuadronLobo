@@ -9,7 +9,7 @@ namespace MVCLaboratorio.Models
     {
         List<Empleado> obtenerEmpleado();
         Empleado obtenerEmpleado(int idEmpleado);
-        void insetrtarEmpleado(Empleado datosEmpleado);
+        void insertarEmpleado(Empleado datosEmpleado);
         void eliminarEmpleado(int idEmpleado);
         void actualizarEmpleado (Empleado datosEmpleado);
     

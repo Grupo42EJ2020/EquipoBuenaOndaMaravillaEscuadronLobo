@@ -22,7 +22,7 @@ namespace MVCLaboratorio.Models
                 Empleado EmpleadoAux = new Empleado();
                 EmpleadoAux.IdEmpleado = int.Parse(item["IdEmpleado"].ToString());
                 EmpleadoAux.Nombre = item["Nombre"].ToString();
-                EmpleadoAux.Direccion = item ["direccion"].ToString();
+                EmpleadoAux.Direccion = item ["Direccion"].ToString();
                 
 
                 lstEmpleado.Add(EmpleadoAux);
@@ -63,7 +63,6 @@ namespace MVCLaboratorio.Models
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@Nombre", datosEmpleado.Nombre));
-            parametros.Add(new SqlParameter("@Id", datosEmpleado.IdEmpleado));
             parametros.Add(new SqlParameter("@Direccion", datosEmpleado.Direccion));
 
             BaseHelper.ejecutarConsulta("sp_Agregar_Empleado", CommandType.StoredProcedure, parametros);
@@ -87,9 +86,9 @@ namespace MVCLaboratorio.Models
             parametros.Add(new SqlParameter("@IdEmpleado", datosEmpleado.IdEmpleado));
             parametros.Add(new SqlParameter("@Nombre", datosEmpleado.Nombre));
             parametros.Add(new SqlParameter("@Direccion", datosEmpleado.Direccion));
-            
 
-            BaseHelper.ejecutarConsulta("sp_Actualizar_Empleado", CommandType.StoredProcedure, parametros);
+
+            BaseHelper.ejecutarConsulta("sp_Actualizar_Empleados", CommandType.StoredProcedure, parametros);
 
         }
     }
