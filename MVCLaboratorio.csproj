@@ -86,7 +86,9 @@
     <Content Include="Views\Video\VideoDelete.aspx" />
     <Content Include="Views\Video\VideoDetails.aspx" />
     <Content Include="Views\Video\VideoEdit.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
