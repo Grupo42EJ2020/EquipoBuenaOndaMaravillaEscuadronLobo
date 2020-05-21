@@ -64,7 +64,8 @@ namespace MVCLaboratorio.Controllers
         public ActionResult VideoCreate(Video datos)
         {
             repoVideo.insertarVideo(datos);
-            return RedirectToAction("/Video/Index");
+            return RedirectToAction("Index");
+
         }
     }
 }
