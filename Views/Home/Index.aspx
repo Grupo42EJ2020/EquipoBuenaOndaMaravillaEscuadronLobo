@@ -14,7 +14,10 @@
     <center>
      <a href="/Video/Index">Ir a la lista de Video</a>
     </center>
-   
+   <center>
+   <p></p>
+     <a href="/Tema/Index">Ir a la lista de Tema</a>
+    </center>
     <p>
     </p>
 </body>
