@@ -13,4 +13,6 @@ namespace MVCLaboratorio.Models
         void eliminarVideo(int idVideo);
         void actualizarVideo(Video datosVideo);
     }
+
+
 }

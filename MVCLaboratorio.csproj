@@ -66,15 +66,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\EmpleadoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TemaController.cs" />
     <Compile Include="Controllers\VideoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+
     <Compile Include="Models\ITema.cs" />
     <Compile Include="Models\IVideo.cs" />
     <Compile Include="Models\RepositorioTema.cs" />
+
+    <Compile Include="Models\Empleado.cs" />
+    <Compile Include="Models\IEmpleado.cs" />
+    <Compile Include="Models\IVideo.cs" />
+    <Compile Include="Models\RepositorioEmpleado.cs" />
+
     <Compile Include="Models\RepositorioVideo.cs" />
     <Compile Include="Models\Tema.cs" />
     <Compile Include="Models\Video.cs" />
@@ -85,11 +93,19 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+
     <Content Include="Views\Tema\Index.aspx" />
     <Content Include="Views\Tema\TemaCreate.aspx" />
     <Content Include="Views\Tema\TemaDelete.aspx" />
     <Content Include="Views\Tema\TemaDetails.aspx" />
     <Content Include="Views\Tema\TemaEdit.aspx" />
+
+    <Content Include="Views\Video\Empleado\EmpleadoCreate.aspx" />
+    <Content Include="Views\Video\Empleado\EmpleadoDelete.aspx" />
+    <Content Include="Views\Video\Empleado\EmpleadoDetails.aspx" />
+    <Content Include="Views\Video\Empleado\EmpleadoEdit.aspx" />
+    <Content Include="Views\Video\Empleado\IndexEmpl.aspx" />
+
     <Content Include="Views\Video\Index.aspx" />
     <Content Include="Views\Video\VideoCreate.aspx" />
     <Content Include="Views\Video\VideoDelete.aspx" />

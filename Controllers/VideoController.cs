@@ -65,6 +65,10 @@ namespace MVCLaboratorio.Controllers
         {
             repoVideo.insertarVideo(datos);
             return RedirectToAction("Index");
+<<<<<<< HEAD
+
+=======
+>>>>>>> b3ff6b356b26764d107be6abcbc13cef026c1325
         }
     }
 }
