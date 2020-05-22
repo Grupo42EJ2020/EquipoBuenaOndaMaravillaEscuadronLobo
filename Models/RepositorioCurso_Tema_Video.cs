@@ -15,7 +15,7 @@ namespace MVCLaboratorio.Models
             DataTable dtCurso_Tema_Video;
             dtCurso_Tema_Video = BaseHelper.ejecutarConsulta("sp_ConsultarTodo_CTV", CommandType.StoredProcedure);
 
-            List<Curso_Tema_Video> lstEmpleado = new List<Curso_Tema_Video>();
+            List<Curso_Tema_Video> lstCTV = new List<Curso_Tema_Video>();
 
             foreach (DataRow item in dtCurso_Tema_Video.Rows)
             {

@@ -9,7 +9,7 @@ namespace MVCLaboratorio.Models
     {
         List<Curso_Tema_Video> obtenerCTV();
         Curso_Tema_Video obtenerCTV(int idCTV);
-        void insertarCTV(Empleado datosCTV);
+        void insertarCTV(Curso_Tema_Video datosCTV);
         void eliminarCTV(int idCTV);
         void actualizarCTV(Curso_Tema_Video datosCTV);
     }
