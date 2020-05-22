@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Curso_Tema_VideoController.cs" />
     <Compile Include="Controllers\EmpleadoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TemaController.cs" />
@@ -73,7 +74,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Curso_Tema_Video.cs" />
+    <Compile Include="Models\ICurso_Tema_Video.cs" />
     <Compile Include="Models\ITema.cs" />
+    <Compile Include="Models\RepositorioCurso_Tema_Video.cs" />
     <Compile Include="Models\RepositorioTema.cs" />
     <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\IEmpleado.cs" />
