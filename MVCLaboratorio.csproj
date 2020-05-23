@@ -94,6 +94,11 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Views\Curso_Tema_Video\CTVCreate.aspx" />
+    <Content Include="Views\Curso_Tema_Video\CTVDelete.aspx" />
+    <Content Include="Views\Curso_Tema_Video\CTVDetails.aspx" />
+    <Content Include="Views\Curso_Tema_Video\CTVEdit.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Index.aspx" />
     <Content Include="Views\Empleado\EmpleadoCreate.aspx" />
     <Content Include="Views\Empleado\EmpleadoDelete.aspx" />
     <Content Include="Views\Empleado\EmpleadoDetails.aspx" />
