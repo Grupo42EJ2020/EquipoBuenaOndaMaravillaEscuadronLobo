@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace MVCLaboratorio.Models
 {
-    public class RepositorioTema : ICurso_Tema
+    public class RepositorioCurso_Tema : ICurso_Tema
     {
         public List<Curso_Tema> obtenerCurso_Tema()
         {

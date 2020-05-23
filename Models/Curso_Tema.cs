@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace MVCLaboratorio.Models
 {
-    public class Empleado
+    public class Curso_Tema
     {
         public int IdCT { get; set; }
         public string idCurso { get; set; }
