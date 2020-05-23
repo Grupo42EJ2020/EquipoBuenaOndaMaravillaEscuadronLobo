@@ -62,7 +62,10 @@ namespace MVCLaboratorio.Models
 
         public void insertarCTV(Curso_Tema_Video datosCurso_Tema_Video)
         {
-            BaseHelper.ejecutarConsulta("sp_Agregar_CTV", CommandType.StoredProcedure);
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdCT", datosCurso_Tema_Video.IdCT));
+            parametros.Add(new SqlParameter("@IdVideo", datosCurso_Tema_Video.IdVideo));
+            BaseHelper.ejecutarConsulta("sp_Agregar_CTV", CommandType.StoredProcedure,parametros);
 
         }
 
