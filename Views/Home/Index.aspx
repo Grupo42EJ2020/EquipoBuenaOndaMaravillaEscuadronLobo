@@ -22,6 +22,10 @@
    <p></p>
      <a href="/Empleado/Index">Ir a la lista de Empleado</a>
     </center>
+    <p></p>
+    <center>
+    <a href="/Curso_Tema_Video/Index">Ir a la lista de Curso_Tema_Video</a>
+    </center>
     <p>
     </p>
 </body>
