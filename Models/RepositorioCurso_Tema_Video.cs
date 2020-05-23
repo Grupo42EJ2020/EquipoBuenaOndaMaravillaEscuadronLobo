@@ -5,33 +5,13 @@ using System.Web;
 using System.Data;
 using System.Data.SqlClient;
 using MVCLaboratorio.Utilerias;
+using MVCLaboratorio.Models;
 
 namespace MVCLaboratorio.Models
 {
     public class RepositorioCurso_Tema_Video : ICurso_Tema_Video
     {
-        public List<Curso_Tema_Video> obtenerCTV()
-        {
-            DataTable dtCurso_Tema_Video;
-            dtCurso_Tema_Video = BaseHelper.ejecutarConsulta("sp_ConsultarTodo_CTV", CommandType.StoredProcedure);
-
-            List<Curso_Tema_Video> lstCTV = new List<Curso_Tema_Video>();
-
-            foreach (DataRow item in dtCurso_Tema_Video.Rows)
-            {
-                Curso_Tema_Video CTVAux = new Curso_Tema_Video();
-                CTVAux.IdCTV = int.Parse(item["IdCTV"].ToString());
-                CTVAux.IdCT = int.Parse(item["IdCT"].ToString());
-                CTVAux.IdVideo = int.Parse(item["IdVideo"].ToString());
-
-
-                lstCTV.Add(CTVAux);
-            }
-
-            return lstCTV;
-
-
-        }
+        
         public Curso_Tema_Video obtenerCTV(int IdCTV)
         {
             DataTable dtCurso_Tema_Video;
@@ -90,6 +70,27 @@ namespace MVCLaboratorio.Models
 
             BaseHelper.ejecutarConsulta("sp_Actualizar_CTV", CommandType.StoredProcedure, parametros);
 
+        }
+
+        public List<Curso_Tema_Video> obtenerCTV()
+        {
+            DataTable dtCurso_Tema_Video;
+            dtCurso_Tema_Video = BaseHelper.ejecutarConsulta("sp_ConsultarTodo_CTV", CommandType.StoredProcedure);
+
+            List<Curso_Tema_Video> lstCTV = new List<Curso_Tema_Video>();
+
+            foreach (DataRow item in dtCurso_Tema_Video.Rows)
+            {
+                Curso_Tema_Video CTVAux = new Curso_Tema_Video();
+                CTVAux.IdCTV = int.Parse(item["IdCTV"].ToString());
+                CTVAux.IdCT = int.Parse(item["IdCT"].ToString());
+                CTVAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+
+
+                lstCTV.Add(CTVAux);
+            }
+
+            return lstCTV;
         }
     }
 }

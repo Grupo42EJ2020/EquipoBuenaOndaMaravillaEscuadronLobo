@@ -7,7 +7,7 @@
     <title>Eliminar Video</title>
 </head>
 <body>
-    <h3>Are you sure you want to delete this?</h3>
+    <h3>Deseas borrar esto?</h3>
     <fieldset>
         <legend>Eliminar Video</legend>
         
