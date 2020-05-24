@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Curso_TemaController.cs" />
     <Compile Include="Controllers\Curso_Tema_VideoController.cs" />
     <Compile Include="Controllers\EmpleadoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -74,7 +75,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Curso_Tema.cs" />
     <Compile Include="Models\Curso_Tema_Video.cs" />
+    <Compile Include="Models\ICurso_Tema.cs" />
     <Compile Include="Models\ICurso_Tema_Video.cs" />
     <Compile Include="Models\ITema.cs" />
     <Compile Include="Models\RepositorioCurso_Tema_Video.cs" />
@@ -84,6 +87,7 @@
     <Compile Include="Models\IVideo.cs" />
     <Compile Include="Models\RepositorioEmpleado.cs" />
     <Compile Include="Models\RepositorioVideo.cs" />
+    <Compile Include="Models\RespositorioCurso_Tema.cs" />
     <Compile Include="Models\Tema.cs" />
     <Compile Include="Models\Video.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
