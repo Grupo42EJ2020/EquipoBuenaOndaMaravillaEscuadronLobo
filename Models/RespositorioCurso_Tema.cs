@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
+using System.Data;
+using System.Data.SqlClient;
+using MVCLaboratorio.Utilerias;
 
 namespace MVCLaboratorio.Models
 {
@@ -10,15 +12,14 @@ namespace MVCLaboratorio.Models
     {
         public List<Curso_Tema> obtenerCurso_Tema()
         {
-            DataTable dtCurso_Tema;
-            dtCurso_Tema = BaseHelper.ejecutarConsulta("sp_ConsultarTodo_Curso_Tema", CommandType.StoredProcedure);
+            DataTable dtCurso_Tema = BaseHelper.ejecutarConsulta("sp_ConsultarTodo_Curso_Tema", CommandType.StoredProcedure);
             List<Curso_Tema> lstCurso_Tema = new List<Curso_Tema>();
             foreach (DataRow item in dtCurso_Tema.Rows)
             {
                 Curso_Tema Curso_TemaAux = new Curso_Tema();
                 Curso_TemaAux.IdCT = int.Parse(item["IdCT"].ToString());
-                Curso_TemaAux.IdCurso = item["IdCurso"].ToString();
-                Curso_TemaAux.IdTema = item["IdTema"].ToString();
+                Curso_TemaAux.IdCurso = int.Parse(item["IdCurso"].ToString());
+                Curso_TemaAux.IdTema = int.Parse(item["IdTema"].ToString());
                 lstCurso_Tema.Add(temaAux);
             }
             return lstCurso_Tema;
@@ -34,8 +35,8 @@ namespace MVCLaboratorio.Models
             Curso_Tema datosCurso_Tema = new Curso_Tema();
             if (dtCurso_Tema.Rows.Count > 0)
             {
-                datosCurso_Tema.IdCuarso_Tema = int.Parse(dtCurso_Tema.Rows[0]["IdCT"].ToString());
-                datosCurso_Tema.IdCurso = dtCuarso_Tema.Rows[0]["IdCurso"].ToString();
+                datosCurso_Tema.IdCurso_Tema = int.Parse(dtCurso_Tema.Rows[0]["IdCT"].ToString());
+                datosCurso_Tema.IdCurso = dtCurso_Tema.Rows[0]["IdCurso"].ToString();
                 parametros.Add(new SqlParameter("@IdTema", datosCurso_Tema.IdTema));
                 return datosTema;
             }

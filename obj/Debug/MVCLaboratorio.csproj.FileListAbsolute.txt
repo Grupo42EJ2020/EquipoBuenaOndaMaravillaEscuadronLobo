@@ -3,13 +3,13 @@ C:\Users\manym\Desktop\Pia Desarrollo\EquipoBuenaOndaMaravillaEscuadronLobo\bin\
 C:\Users\manym\Desktop\Pia Desarrollo\EquipoBuenaOndaMaravillaEscuadronLobo\bin\MVCLaboratorio.pdb
 C:\Users\manym\Desktop\Pia Desarrollo\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.dll
 C:\Users\manym\Desktop\Pia Desarrollo\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.pdb
-
 C:\Users\manym\Desktop\Pia Desarrollo\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.csprojResolveAssemblyReference.cache
-
 C:\Users\user\Desktop\Facu 4to\Sistemas\EquipoBuenaOndaMaravillaEscuadronLobo\bin\Models\Video.cs
 C:\Users\user\Desktop\Facu 4to\Sistemas\EquipoBuenaOndaMaravillaEscuadronLobo\bin\MVCLaboratorio.dll
 C:\Users\user\Desktop\Facu 4to\Sistemas\EquipoBuenaOndaMaravillaEscuadronLobo\bin\MVCLaboratorio.pdb
 C:\Users\user\Desktop\Facu 4to\Sistemas\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\Facu 4to\Sistemas\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.dll
 C:\Users\user\Desktop\Facu 4to\Sistemas\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.pdb
-
+C:\Users\yarit\OneDrive\Escritorio\PIA\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.csprojResolveAssemblyReference.cache
+C:\Users\yarit\OneDrive\Escritorio\PIA\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.dll
+C:\Users\yarit\OneDrive\Escritorio\PIA\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.pdb
