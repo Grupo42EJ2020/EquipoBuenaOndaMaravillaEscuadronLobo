@@ -7,7 +7,7 @@
     <title>TemaDelete</title>
 </head>
 <body>
-    <h3>Are you sure you want to delete this?</h3>
+    <h3>¿Estas seguro en eliminar este Tema?</h3>
     <fieldset>
         <legend>Eliminar Tema</legend>
         

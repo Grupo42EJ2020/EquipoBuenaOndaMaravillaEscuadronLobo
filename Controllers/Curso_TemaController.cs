@@ -37,7 +37,7 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Cursp_TemaDetails(int id)
+        public ActionResult Curso_TemaDetails(int id)
         {
             return View(repoCurso_Tema.obtenerCurso_Tema(id));
 

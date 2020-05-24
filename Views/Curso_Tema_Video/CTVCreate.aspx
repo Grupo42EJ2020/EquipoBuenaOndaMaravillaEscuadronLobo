@@ -11,7 +11,7 @@
         <%: Html.ValidationSummary(true) %>
 
         <fieldset>
-            <legend>CTVCreate</legend>
+            <legend>Crear Curso_Tema_Video</legend>
             
          
             

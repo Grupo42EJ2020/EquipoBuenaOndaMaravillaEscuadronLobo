@@ -8,7 +8,7 @@
 </head>
 <body>
     <fieldset>
-        <legend>Detalles CTV</legend>
+        <legend>Detalles Curso_Tema_Video</legend>
         
 
         

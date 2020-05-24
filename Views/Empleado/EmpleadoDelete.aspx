@@ -7,7 +7,7 @@
     <title>EmpleadoDelete</title>
 </head>
 <body>
-    <h3>Are you sure you want to delete this?</h3>
+    <h3>¿Estas seguro que quieres eliminar este empleado?</h3>
     <fieldset>
         <legend>Eliminar Empleado</legend>
         

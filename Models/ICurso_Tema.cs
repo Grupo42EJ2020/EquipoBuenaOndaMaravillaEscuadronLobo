@@ -7,7 +7,7 @@ namespace MVCLaboratorio.Models
 {
     public interface ICurso_Tema
     {
-        List<Curso_Tema> obtenerCurso_Tema();
+        List<Curso_Tema> obtenerCurso_Temas();
         Curso_Tema obtenerCurso_Tema(int idCT);
         void insertarCurso_Tema(Curso_Tema datosCurso_Tema);
         void eliminarCurso_Tema(int IdCT);

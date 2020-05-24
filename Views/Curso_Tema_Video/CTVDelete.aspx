@@ -7,9 +7,9 @@
     <title>Eliminar CTV</title>
 </head>
 <body>
-    <h3>Are you sure you want to delete this?</h3>
+    <h3>¿Estas seguro en eliminar el Curso_Tema_Video?</h3>
     <fieldset>
-        <legend>CTVEliminar</legend>
+        <legend>Eliminar Curso_Tema_Video</legend>
         
    
         <div class="display-label">IdCT</div>
