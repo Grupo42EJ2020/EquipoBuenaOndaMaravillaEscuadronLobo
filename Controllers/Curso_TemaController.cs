@@ -15,6 +15,7 @@ namespace MVCLaboratorio.Controllers
 
         public ActionResult Index()
         {
+            //cambio
             return View(repoCurso_Tema.obtenerCurso_Temas());
         }
 
