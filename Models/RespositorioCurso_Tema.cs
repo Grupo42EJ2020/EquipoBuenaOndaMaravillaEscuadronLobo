@@ -20,7 +20,7 @@ namespace MVCLaboratorio.Models
                 Curso_TemaAux.IdCT = int.Parse(item["IdCT"].ToString());
                 Curso_TemaAux.IdCurso = int.Parse(item["IdCurso"].ToString());
                 Curso_TemaAux.IdTema = int.Parse(item["IdTema"].ToString());
-                lstCurso_Tema.Add(temaAux);
+                lstCurso_Tema.Add(Curso_TemaAux);
             }
             return lstCurso_Tema;
 
@@ -30,15 +30,15 @@ namespace MVCLaboratorio.Models
         {
             DataTable dtCurso_Tema;
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdCT", IdCT));
+            parametros.Add(new SqlParameter("@IdCT", IdCurso_Tema));
             dtCurso_Tema = BaseHelper.ejecutarConsulta("sp_ConsultarUno_Curso_Tema", CommandType.StoredProcedure, parametros);
             Curso_Tema datosCurso_Tema = new Curso_Tema();
             if (dtCurso_Tema.Rows.Count > 0)
             {
-                datosCurso_Tema.IdCurso_Tema = int.Parse(dtCurso_Tema.Rows[0]["IdCT"].ToString());
-                datosCurso_Tema.IdCurso = dtCurso_Tema.Rows[0]["IdCurso"].ToString();
+                datosCurso_Tema.IdCT = int.Parse(dtCurso_Tema.Rows[0]["IdCT"].ToString());
+                datosCurso_Tema.IdCurso =int.Parse( dtCurso_Tema.Rows[0]["IdCurso"].ToString());
                 parametros.Add(new SqlParameter("@IdTema", datosCurso_Tema.IdTema));
-                return datosTema;
+                return datosCurso_Tema;
             }
             else
             {
@@ -56,16 +56,16 @@ namespace MVCLaboratorio.Models
         public void eliminarCurso_Tema(int IdCT)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdCT", IdTema));
+            parametros.Add(new SqlParameter("@IdCT", IdCT));
             BaseHelper.ejecutarSentencia("sp_Eliminar_Curso_Tema", CommandType.StoredProcedure, parametros);
 
         }
 
-        public void actualizarTema(Tema datosCurso_Tema)
+        public void actualizarCurso_Tema(Curso_Tema datosCurso_Tema)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdCT", datosTema.IdCT));
-            parametros.Add(new SqlParameter("@IdCurso", datosTema.IdCurso));
+            parametros.Add(new SqlParameter("@IdCT", datosCurso_Tema.IdCT));
+            parametros.Add(new SqlParameter("@IdCurso", datosCurso_Tema.IdCurso));
             BaseHelper.ejecutarConsulta("sp_Actualizar_Curso_Tema", CommandType.StoredProcedure, parametros);
 
         }

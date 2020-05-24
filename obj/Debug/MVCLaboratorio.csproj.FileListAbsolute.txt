@@ -13,3 +13,9 @@ C:\Users\user\Desktop\Facu 4to\Sistemas\EquipoBuenaOndaMaravillaEscuadronLobo\ob
 C:\Users\yarit\OneDrive\Escritorio\PIA\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.csprojResolveAssemblyReference.cache
 C:\Users\yarit\OneDrive\Escritorio\PIA\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.dll
 C:\Users\yarit\OneDrive\Escritorio\PIA\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.pdb
+C:\Users\Hogar\Desktop\OSCAR C# PRO\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.csprojResolveAssemblyReference.cache
+C:\Users\Hogar\Desktop\OSCAR C# PRO\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.dll
+C:\Users\Hogar\Desktop\OSCAR C# PRO\EquipoBuenaOndaMaravillaEscuadronLobo\obj\Debug\MVCLaboratorio.pdb
+C:\Users\Hogar\Desktop\OSCAR C# PRO\EquipoBuenaOndaMaravillaEscuadronLobo\bin\Models\Video.cs
+C:\Users\Hogar\Desktop\OSCAR C# PRO\EquipoBuenaOndaMaravillaEscuadronLobo\bin\MVCLaboratorio.dll
+C:\Users\Hogar\Desktop\OSCAR C# PRO\EquipoBuenaOndaMaravillaEscuadronLobo\bin\MVCLaboratorio.pdb

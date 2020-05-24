@@ -28,5 +28,9 @@
     </center>
     <p>
     </p>
+     <center>
+   <p></p>
+     <a href="/Curso/Index">Ir a la lista de Curso</a>
+    </center>
 </body>
 </html>

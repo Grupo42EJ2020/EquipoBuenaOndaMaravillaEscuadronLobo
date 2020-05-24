@@ -5,10 +5,11 @@ using System.Web;
 
 namespace MVCLaboratorio.Models
 {
-    public class Curso_Tema
+    public class Curso
     {
-        public int IdCT { get; set; }
         public int IdCurso { get; set; }
-        public int IdTema { get; set; }
+        public string Descripcion { get; set; }
+        public int IdEmpleado { get; set; }
+        public string Empleado { get; set; }
     }
 }
