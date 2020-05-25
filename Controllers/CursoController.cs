@@ -37,7 +37,7 @@ namespace MVCLaboratorio.Controllers
         }
 
         //Editar Curso
-        public ActionResult CusoDetails(int id)
+        public ActionResult CursoDetails(int id)
         {
             return View(repoCurso.obtenerCurso(id));
         }

@@ -10,7 +10,8 @@
     <fieldset>
         <legend>Detalles Curso_Tema_Video</legend>
         
-
+        <div class="display-label">IdCTV</div>
+        <div class="display-field"><%: Model.IdCTV %></div>
         
         <div class="display-label">IdCT</div>
         <div class="display-field"><%: Model.IdCT %></div>
@@ -20,8 +21,8 @@
         
     </fieldset>
     <p>
-        <%: Html.ActionLink("Editar", "CTVEditar", new {  id=Model.IdCTV  }) %> |
-        <%: Html.ActionLink("Regresar a la lista", "Index") %>
+        <%: Html.ActionLink("Editar", "CTVEdit", new {  id=Model.IdCTV }) %> |
+        <%: Html.ActionLink("Regresar", "Index") %>
     </p>
 
 </body>

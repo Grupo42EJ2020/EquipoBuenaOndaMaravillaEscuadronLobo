@@ -31,7 +31,7 @@
     <% } %>
 
     <div>
-        <%: Html.ActionLink("Regresar a la lista de Tema", "/Tema/Index") %>
+        <%: Html.ActionLink("Regresar", "Index") %>
     </div>
 
 </body>
