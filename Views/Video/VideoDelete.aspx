@@ -27,7 +27,7 @@
     <% using (Html.BeginForm()) { %>
         <p>
 		    <input type="submit" value="Eliminar" /> |
-		    <%: Html.ActionLink("Regresar a la lista de Video", "/Video/Index") %>
+		    <%: Html.ActionLink("Regresar a la lista de Video", "Index") %>
         </p>
     <% } %>
 

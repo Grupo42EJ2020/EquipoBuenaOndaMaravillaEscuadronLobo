@@ -12,11 +12,11 @@
         <legend>Eliminar Curso_Tema</legend>
         
         
-        <div class="display-label">idCurso</div>
-        <div class="display-field"><%: Model.idCurso %></div>
+        <div class="display-label">IdCurso</div>
+        <div class="display-field"><%: Model.IdCurso %></div>
         
-        <div class="display-label">idTema</div>
-        <div class="display-field"><%: Model.idTema %></div>
+        <div class="display-label">IdTema</div>
+        <div class="display-field"><%: Model.IdTema %></div>
         
     </fieldset>
     <% using (Html.BeginForm()) { %>

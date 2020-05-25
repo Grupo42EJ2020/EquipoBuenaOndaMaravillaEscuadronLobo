@@ -127,5 +127,13 @@
     
     </form>
     
+    <a href="/Curso_Tema_Video/Index">Ir a la lista de Curso_Tema_Video</a>
+    </center>
+    <p>
+    </p>
+     <center>
+   <p></p>
+     <a href="/Curso/Index">Ir a la lista de Curso</a>
+    </center>
 </body>
 </html>

@@ -23,7 +23,7 @@
     </fieldset>
     <p>
         <%: Html.ActionLink("Editar", "VideoEdit", new {  id=Model.IdVideo }) %> |
-        <%: Html.ActionLink("Regresar a la lista", "/Video/Index") %>
+        <%: Html.ActionLink("Regresar a la lista", "Index") %>
     </p>
 
 </body>

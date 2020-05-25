@@ -46,7 +46,7 @@
     <% } %>
 
     <div>
-        <%: Html.ActionLink("Regresar a la lista de Videos", "/Video/Index") %>
+        <%: Html.ActionLink("Regresar a la lista de Videos", "Index") %>
     </div>
 
 </body>

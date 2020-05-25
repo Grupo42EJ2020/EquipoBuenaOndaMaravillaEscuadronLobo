@@ -18,12 +18,15 @@ namespace MVCLaboratorio.Models
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdCT", IdCT));
             dtCurso_Tema = BaseHelper.ejecutarConsulta("sp_ConsultarUno_CT", CommandType.StoredProcedure, parametros);
+
+
             Curso_Tema datosCurso_Tema = new Curso_Tema();
             if (dtCurso_Tema.Rows.Count > 0)
             {
                 datosCurso_Tema.IdCT = int.Parse(dtCurso_Tema.Rows[0]["IdCT"].ToString());
-                datosCurso_Tema.idCurso = int.Parse(dtCurso_Tema.Rows[0]["idCurso"].ToString());
-                parametros.Add(new SqlParameter("@IdTema", datosCurso_Tema.idTema));
+
+                datosCurso_Tema.IdCurso =int.Parse( dtCurso_Tema.Rows[0]["IdCurso"].ToString());
+                parametros.Add(new SqlParameter("@IdTema", datosCurso_Tema.IdTema));
                 return datosCurso_Tema;
             }
             else
@@ -35,7 +38,7 @@ namespace MVCLaboratorio.Models
         public void insertarCurso_Tema(Curso_Tema datosCurso_Tema)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdCurso", datosCurso_Tema.idCurso));
+            parametros.Add(new SqlParameter("@IdCurso", datosCurso_Tema.IdCurso));
             BaseHelper.ejecutarConsulta("sp_Agregar_CT", CommandType.StoredProcedure, parametros);
         }
 
@@ -44,17 +47,15 @@ namespace MVCLaboratorio.Models
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdCT", IdCT));
             BaseHelper.ejecutarSentencia("sp_Eliminar_CT", CommandType.StoredProcedure, parametros);
-
         }
 
         public void actualizarCurso_Tema(Curso_Tema datosCurso_Tema)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdCT", datosCurso_Tema.IdCT));
-            parametros.Add(new SqlParameter("@idCurso", datosCurso_Tema.idCurso));
-            parametros.Add(new SqlParameter("@idTema", datosCurso_Tema.idTema));
+            parametros.Add(new SqlParameter("@IdCurso", datosCurso_Tema.IdCurso));
+            parametros.Add(new SqlParameter("@IdTema", datosCurso_Tema.IdTema));
             BaseHelper.ejecutarConsulta("sp_Actualizar_CT", CommandType.StoredProcedure, parametros);
-
 
         }
 
@@ -66,8 +67,8 @@ namespace MVCLaboratorio.Models
             {
                 Curso_Tema Curso_TemaAux = new Curso_Tema();
                 Curso_TemaAux.IdCT = int.Parse(item["IdCT"].ToString());
-                Curso_TemaAux.idCurso = int.Parse(item["idCurso"].ToString());
-                Curso_TemaAux.idTema = int.Parse(item["idTema"].ToString());
+                Curso_TemaAux.IdCurso = int.Parse(item["IdCurso"].ToString());
+                Curso_TemaAux.IdTema = int.Parse(item["IdTema"].ToString());
                 lstCurso_Tema.Add(Curso_TemaAux);
             }
             return lstCurso_Tema;

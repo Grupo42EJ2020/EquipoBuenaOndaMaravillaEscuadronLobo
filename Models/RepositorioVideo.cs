@@ -10,52 +10,6 @@ namespace MVCLaboratorio.Models
 {
     public class RepositorioVideo : IVideo
     {
-        public List<Video> obtenerVideos()
-        {
-            DataTable dtVideos;
-            dtVideos = BaseHelper.ejecutarConsulta("sp_ConsultarTodo_Video", CommandType.StoredProcedure);
-
-            List<Video> lstVideos = new List<Video>();
-
-             foreach (DataRow item in dtVideos.Rows)
-            {
-                Video videoAux = new Video();
-                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
-                videoAux.Nombre = item["Nombre"].ToString();
-                videoAux.Url = item["Url"].ToString();
-                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
-
-                lstVideos.Add(videoAux);
-            }
-
-            return lstVideos;
-        }
-
-        public Video obtenerVideo(int idVideo)
-        {
-            DataTable dtVideo;
-            List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdVideo", idVideo));
-
-            dtVideo = BaseHelper.ejecutarConsulta("sp_ConsultarUno_Video", CommandType.StoredProcedure, parametros);
-
-            //convertir el dtVideo a un objeto Video
-            Video datosVideo = new Video();
-
-            if (dtVideo.Rows.Count > 0) //si lo encontro
-            {
-                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
-                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
-                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
-                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
-
-                return datosVideo;
-            }
-            else
-            { //no lo encontro 
-                return null;
-            }
-        }
 
         public void insertarVideo(Video datosVideo)
         {
@@ -89,10 +43,53 @@ namespace MVCLaboratorio.Models
 
         }
 
-
-        public List<Video> obtenerVideo()
+        public Video obtenerVideo(int idVideo)
         {
-            throw new NotImplementedException();
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", idVideo));
+
+            dtVideo = BaseHelper.ejecutarConsulta("sp_ConsultarUno_Video", CommandType.StoredProcedure, parametros);
+
+            //convertir el dtVideo a un objeto Video
+            Video datosVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //si lo encontro
+            {
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return datosVideo;
+            }
+            else
+            { //no lo encontro 
+                return null;
+            }
+        }
+
+
+        public List<Video> obtenerVideos()
+        {
+
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_ConsultarTodo_Video", CommandType.StoredProcedure);
+
+            List<Video> lstVideos = new List<Video>();
+
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+
+                lstVideos.Add(videoAux);
+            }
+
+            return lstVideos;
         }
     }
 }

@@ -15,19 +15,19 @@
             
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.idCurso) %>
+                <%: Html.LabelFor(model => model.IdCurso) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.idCurso) %>
-                <%: Html.ValidationMessageFor(model => model.idCurso) %>
+                <%: Html.TextBoxFor(model => model.IdCurso) %>
+                <%: Html.ValidationMessageFor(model => model.IdCurso) %>
             </div>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.idTema) %>
+                <%: Html.LabelFor(model => model.IdTema) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.idTema) %>
-                <%: Html.ValidationMessageFor(model => model.idTema) %>
+                <%: Html.TextBoxFor(model => model.IdTema) %>
+                <%: Html.ValidationMessageFor(model => model.IdTema) %>
             </div>
             
             <p>

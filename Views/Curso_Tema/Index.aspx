@@ -14,10 +14,10 @@
                 IdCT
             </th>
             <th>
-                idCurso
+                IdCurso
             </th>
             <th>
-                idTema
+                IdTema
             </th>
         </tr>
 
@@ -33,10 +33,10 @@
                 <%: item.IdCT %>
             </td>
             <td>
-                <%: item.idCurso %>
+                <%: item.IdCurso %>
             </td>
             <td>
-                <%: item.idTema %>
+                <%: item.IdTema %>
             </td>
         </tr>
     
