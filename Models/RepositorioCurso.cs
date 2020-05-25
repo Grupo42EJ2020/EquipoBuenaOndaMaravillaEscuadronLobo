@@ -45,10 +45,9 @@ namespace MVCLaboratorio.Models
             if (dtCurso.Rows.Count > 0) //si lo encontro
             {
                 DataRow item = dtCurso.Rows[0];
-                curso.IdEmpleado = int.Parse(item["IdEmpleado"].ToString());
                 curso.IdCurso = int.Parse(item["IdCurso"].ToString());
                 curso.Descripcion = item["Descripcion"].ToString();
-                curso.Empleado = item["Empleado"].ToString();
+                curso.IdEmpleado = int.Parse(item["IdEmpleado"].ToString());
                 return curso;
             }
             else
@@ -60,8 +59,8 @@ namespace MVCLaboratorio.Models
         public void insertarCurso(Curso datosCurso)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@descripcion ", datosCurso.Descripcion));
-            parametros.Add(new SqlParameter("@idEmpleado  ", datosCurso.IdEmpleado));
+            parametros.Add(new SqlParameter("@Descripcion ", datosCurso.Descripcion));
+            parametros.Add(new SqlParameter("@IdEmpleado  ", datosCurso.IdEmpleado));
 
             BaseHelper.ejecutarConsulta("sp_Agregar_Curso", CommandType.StoredProcedure, parametros);
         }
@@ -70,7 +69,7 @@ namespace MVCLaboratorio.Models
         {
 
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@idCurso", IdCurso));
+            parametros.Add(new SqlParameter("@IdCurso", IdCurso));
 
             BaseHelper.ejecutarConsulta("sp_Eliminar_Curso", CommandType.StoredProcedure, parametros);
         }
@@ -79,9 +78,10 @@ namespace MVCLaboratorio.Models
         {
 
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@descripcion ", datosCurso.Descripcion));
-            parametros.Add(new SqlParameter("@idEmpleado  ", datosCurso.IdEmpleado));
-            parametros.Add(new SqlParameter("@idCurso", datosCurso.IdCurso));
+            parametros.Add(new SqlParameter("@IdCurso", datosCurso.IdCurso));
+            parametros.Add(new SqlParameter("@Descripcion ", datosCurso.Descripcion));
+            parametros.Add(new SqlParameter("@IdEmpleado  ", datosCurso.IdEmpleado));
+            
 
             BaseHelper.ejecutarConsulta("sp_Actualizar_Curso", CommandType.StoredProcedure, parametros);
         }

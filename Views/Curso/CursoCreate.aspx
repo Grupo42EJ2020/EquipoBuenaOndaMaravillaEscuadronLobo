@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head id="Head1" runat="server">
+<head runat="server">
     <title>CursoCreate</title>
 </head>
 <body>
@@ -11,28 +11,37 @@
         <%: Html.ValidationSummary(true) %>
 
         <fieldset>
-            <legend>Curso Create</legend>
-            <div class="editor-field">
+            <legend>Crear Curso</legend>
+            
+            
+            
+            <div class="editor-label">
                 <%: Html.LabelFor(model => model.Descripcion) %>
+            </div>
+            <div class="editor-field">
                 <%: Html.TextBoxFor(model => model.Descripcion) %>
                 <%: Html.ValidationMessageFor(model => model.Descripcion) %>
             </div>
             
+            <div class="editor-label">
+                <%: Html.LabelFor(model => model.IdEmpleado) %>
+            </div>
             <div class="editor-field">
-                <%: Html.LabelFor(model => model.IdEmpleado) %>                
                 <%: Html.TextBoxFor(model => model.IdEmpleado) %>
                 <%: Html.ValidationMessageFor(model => model.IdEmpleado) %>
             </div>
+            
             <p>
-                <input type="submit" value="Crear" />
+                <input type="submit" value="Agregar" />
             </p>
         </fieldset>
 
     <% } %>
 
     <div>
-        <%: Html.ActionLink("Regresar a la lista", "Index") %>
+        <%: Html.ActionLink("Regresar", "Index") %>
     </div>
 
 </body>
 </html>
+

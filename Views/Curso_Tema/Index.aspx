@@ -47,7 +47,7 @@
     <p>
         <%: Html.ActionLink("Agregar", "Curso_TemaCreate")%>
     </p>
-
+    <a href="/Home/Index">Regresar a la Pagina Principal</a>
 </body>
 </html>
 

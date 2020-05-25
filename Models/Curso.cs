@@ -10,6 +10,5 @@ namespace MVCLaboratorio.Models
         public int IdCurso { get; set; }
         public string Descripcion { get; set; }
         public int IdEmpleado { get; set; }
-        public string Empleado { get; set; }
     }
 }

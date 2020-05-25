@@ -3,28 +3,31 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head id="Head1" runat="server">
-    <title>Eliminar Curso</title>
+<head runat="server">
+    <title>CursoDelete</title>
 </head>
 <body>
-    <h3>Estas seguro que quieres eliminar el Curso?</h3>
+    <h3>Estas seguro en Eliminar esto?</h3>
     <fieldset>
-        <legend>Eliminar Curso</legend>
+        <legend>Fields</legend>
         
-   
-        <div class="display-label">Id Curso</div>
+        <div class="display-label">IdCurso</div>
         <div class="display-field"><%: Model.IdCurso %></div>
         
         <div class="display-label">Descripcion</div>
-        <div class="display-field"><%: Model.Descripcion%></div>
+        <div class="display-field"><%: Model.Descripcion %></div>
+        
+        <div class="display-label">IdEmpleado</div>
+        <div class="display-field"><%: Model.IdEmpleado %></div>
         
     </fieldset>
     <% using (Html.BeginForm()) { %>
         <p>
-		    <input type="submit" value="Eliminar" /> |
-		    <%: Html.ActionLink("Regresar a la lista", "Index") %>
+		    <input type="submit" value="Borrar" /> |
+		    <%: Html.ActionLink("Regresar", "Index") %>
         </p>
     <% } %>
 
 </body>
 </html>
+

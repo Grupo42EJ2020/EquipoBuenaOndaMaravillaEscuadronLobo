@@ -3,8 +3,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head id="Head1" runat="server">
-    <title>Editar Curso</title>
+<head runat="server">
+    <title>CursoEdit</title>
 </head>
 <body>
     <% using (Html.BeginForm()) {%>
@@ -12,20 +12,25 @@
         
         <fieldset>
             <legend>Editar Curso</legend>
-                        
             
-            <div class="editor-field">
+            
+            
+            <div class="editor-label">
                 <%: Html.LabelFor(model => model.Descripcion) %>
+            </div>
+            <div class="editor-field">
                 <%: Html.TextBoxFor(model => model.Descripcion) %>
                 <%: Html.ValidationMessageFor(model => model.Descripcion) %>
             </div>
             
-            <div class="editor-field">
+            <div class="editor-label">
                 <%: Html.LabelFor(model => model.IdEmpleado) %>
+            </div>
+            <div class="editor-field">
                 <%: Html.TextBoxFor(model => model.IdEmpleado) %>
                 <%: Html.ValidationMessageFor(model => model.IdEmpleado) %>
             </div>
-
+            
             <p>
                 <input type="submit" value="Guardar" />
             </p>
@@ -39,3 +44,4 @@
 
 </body>
 </html>
+
