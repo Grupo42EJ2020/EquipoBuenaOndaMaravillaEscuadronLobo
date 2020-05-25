@@ -14,6 +14,7 @@
             <legend>Agregar Curso_Tema</legend>
             
             
+            
             <div class="editor-label">
                 <%: Html.LabelFor(model => model.IdCurso) %>
             </div>

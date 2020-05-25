@@ -8,8 +8,7 @@
 </head>
 <body>
     <fieldset>
-        <legend>Editar Curo_Tema</legend>
-        
+        <legend>Editar Curso_Tema</legend>
         
         <div class="display-label">IdCurso</div>
         <div class="display-field"><%: Model.IdCurso %></div>

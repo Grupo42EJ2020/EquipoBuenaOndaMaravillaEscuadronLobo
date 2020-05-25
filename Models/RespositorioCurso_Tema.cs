@@ -39,6 +39,7 @@ namespace MVCLaboratorio.Models
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdCurso", datosCurso_Tema.IdCurso));
+            parametros.Add(new SqlParameter("@IdTema", datosCurso_Tema.IdTema));
             BaseHelper.ejecutarConsulta("sp_Agregar_CT", CommandType.StoredProcedure, parametros);
         }
 
@@ -61,7 +62,7 @@ namespace MVCLaboratorio.Models
 
         public List<Curso_Tema> obtenerCurso_Temas()
         {
-            DataTable dtCurso_Tema = BaseHelper.ejecutarConsulta("sp_ConsultarTodo_CT", CommandType.StoredProcedure);
+           /* DataTable dtCurso_Tema = BaseHelper.ejecutarConsulta("sp_ConsultarTodo_CT", CommandType.StoredProcedure);
             List<Curso_Tema> lstCurso_Tema = new List<Curso_Tema>();
             foreach (DataRow item in dtCurso_Tema.Rows)
             {
@@ -71,6 +72,24 @@ namespace MVCLaboratorio.Models
                 Curso_TemaAux.IdTema = int.Parse(item["IdTema"].ToString());
                 lstCurso_Tema.Add(Curso_TemaAux);
             }
+            return lstCurso_Tema;*/
+
+            DataTable dtCurso_Tema;
+            dtCurso_Tema = BaseHelper.ejecutarConsulta("sp_ConsultarTodo_CT", CommandType.StoredProcedure);
+
+            List<Curso_Tema> lstCurso_Tema = new List<Curso_Tema>();
+
+            foreach (DataRow item in dtCurso_Tema.Rows)
+            {
+                Curso_Tema Curso_TemaAux = new Curso_Tema();
+                Curso_TemaAux.IdCT = int.Parse(item["IdCT"].ToString());
+                Curso_TemaAux.IdCurso = int.Parse(item["IdCurso"].ToString());
+                Curso_TemaAux.IdTema = int.Parse(item["IdTema"].ToString());
+
+
+                lstCurso_Tema.Add(Curso_TemaAux);
+            }
+
             return lstCurso_Tema;
         }
 

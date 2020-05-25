@@ -7,9 +7,9 @@
     <title>Curso_TemaDelete</title>
 </head>
 <body>
-    <h3>¿Estas seguro que quieres eliminar esto?</h3>
+    <h3>¿Estas seguro de eliminar esto?</h3>
     <fieldset>
-        <legend>Eliminar Curso_Tema</legend>
+        <legend>Fields</legend>
         
         
         <div class="display-label">IdCurso</div>
