@@ -73,6 +73,12 @@
             font-family: sans-serif;
             font-size: 25pt;
         }
+        .style6
+        {
+            width: 221px;
+            height: 199px;
+            float: right;
+        }
     </style>
 </head>
 <body bgcolor = "white" style="text-align: center">
@@ -126,6 +132,9 @@
     </center>       
     
     </form>
+    
+    </span></span>
+    <img alt="logo" class="style6" src="../../Content/logo_size.png" />
     
 </body>
 </html>

@@ -1,7 +1,13 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Video>" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
 
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+</script>
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>VideoCreate</title>
@@ -10,22 +16,26 @@
         .style2
         {
             background-color: #FFFF99;
+            text-align: justify;
         }
-        .style1
+        .style5
         {
-            width: 225px;
-            height: 72px;
+            width: 205px;
+            height: 85px;
+        }
+        .style6
+        {
+            width: 221px;
+            height: 199px;
+            float: right;
         }
         </style>
 </head>
 <body>
     <p class="style2">
-        <img alt="" class="style1" src="../../Content/unnamed.jpg" /><br />
-    </p>
-    <% using (Html.BeginForm()) {%>
-        <%: Html.ValidationSummary(true) %>
-
-        <fieldset>
+        <img alt="logo" class="style5" 
+            src="../../Content/WhatsApp%20Image%202020-05-25%20at%201.30.21%20PM.png" /><br />
+    </p>&nbsp;<% using (Html.BeginForm()) {%><%: Html.ValidationSummary(true) %><fieldset>
             <legend>Agregar Video</legend>
             
             
@@ -62,7 +72,12 @@
 
     <div>
         <%: Html.ActionLink("Regresar", "Index") %>
+        <p>
+            &nbsp;</p>
     </div>
+
+    <p>
+        <img alt="logo" class="style6" src="../../Content/logo_size.png" /></p>
 
 </body>
 </html>

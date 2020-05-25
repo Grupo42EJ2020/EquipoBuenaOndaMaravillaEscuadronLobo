@@ -16,11 +16,23 @@
             width: 225px;
             height: 72px;
         }
+        .style5
+        {
+            width: 205px;
+            height: 85px;
+        }
+        .style6
+        {
+            width: 221px;
+            height: 199px;
+            float: right;
+        }
         </style>
 </head>
 <body>
     <p class="style2">
-        <img alt="" class="style1" src="../../Content/unnamed.jpg" /><br />
+        <img alt="logo" class="style5" 
+            src="../../Content/WhatsApp%20Image%202020-05-25%20at%201.30.21%20PM.png" /><br />
     </p>
     <fieldset>
         <legend>Detalles Curso_Tema_Video</legend>
@@ -39,6 +51,8 @@
         <%: Html.ActionLink("Editar", "CTVEdit", new {  id=Model.IdCTV }) %> |
         <%: Html.ActionLink("Regresar", "Index") %>
     </p>
+
+    <img alt="logo" class="style6" src="../../Content/logo_size.png" />
 
 </body>
 </html>

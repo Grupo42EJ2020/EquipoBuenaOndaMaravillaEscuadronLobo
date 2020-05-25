@@ -101,9 +101,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\download.png" />
-    <Content Include="Content\logo_size.jpg" />
+    <Content Include="Content\error.png" />
+    <Content Include="Content\facpya logo.png" />
+    <Content Include="Content\logo_size.png" />
     <Content Include="Content\unnamed.jpg" />
     <Content Include="Content\unnamed.png" />
+    <Content Include="Content\WhatsApp Image 2020-05-25 at 1.30.21 PM.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Curso\CursoCreate.aspx" />
@@ -127,6 +130,7 @@
     <Content Include="Views\Empleado\EmpleadoEdit.aspx" />
     <Content Include="Views\Empleado\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
     <Content Include="Views\Tema\Index.aspx" />
     <Content Include="Views\Tema\TemaCreate.aspx" />
     <Content Include="Views\Tema\TemaDelete.aspx" />
@@ -159,9 +163,6 @@
     <Content Include="Scripts\MicrosoftMvcValidation.js" />
     <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Views\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
