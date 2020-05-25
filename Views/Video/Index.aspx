@@ -11,10 +11,14 @@
             width: 225px;
             height: 72px;
         }
+        .style2
+        {
+            background-color: #FFFF99;
+        }
     </style>
 </head>
 <body>
-    <p>
+    <p class="style2">
         <img alt="" class="style1" src="../../Content/unnamed.jpg" /><br />
     </p>
    <fieldset> <table>

@@ -101,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\download.png" />
+    <Content Include="Content\logo_size.jpg" />
     <Content Include="Content\unnamed.jpg" />
     <Content Include="Content\unnamed.png" />
     <Content Include="Global.asax" />

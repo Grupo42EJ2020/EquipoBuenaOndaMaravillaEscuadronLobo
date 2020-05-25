@@ -5,8 +5,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Eliminar Video</title>
+    <style type="text/css">
+
+        .style2
+        {
+            background-color: #FFFF99;
+        }
+        .style1
+        {
+            width: 225px;
+            height: 72px;
+        }
+        </style>
 </head>
 <body>
+    <p class="style2">
+        <img alt="" class="style1" src="../../Content/unnamed.jpg" /><br />
+    </p>
     <h3>¿Deseas borrar este Video?</h3>
     <fieldset>
         <legend>Eliminar Video</legend>
