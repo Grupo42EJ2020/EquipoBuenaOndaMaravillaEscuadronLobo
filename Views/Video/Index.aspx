@@ -6,14 +6,12 @@
 <head runat="server">
     <title>Index</title>
     <style type="text/css">
-        .style1
-        {
-            width: 225px;
-            height: 72px;
-        }
+
+
         .style2
         {
             background-color: #FFFF99;
+            text-align: justify;
         }
         .style5
         {
@@ -26,8 +24,8 @@
             height: 199px;
             float: right;
         }
-    </style>
-</head>
+        </style>
+    </head>
 <body>
     <p class="style2">
         <img alt="logo" class="style5" 
@@ -72,7 +70,7 @@
     <a href="/Home/Index">Regresar a la Pagina Principal</a>
     <p>
         &nbsp;</p>
-    <img alt="logo" class="style6" src="../../Content/logo_size.png" />
+        <img alt="logo" class="style6" src="../../Content/logo_size.png" />
 </body>
 </html>
 
